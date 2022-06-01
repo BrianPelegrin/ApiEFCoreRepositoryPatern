@@ -21,6 +21,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddScoped<IDataRepository<Book, BookDTO>, BookDataManager>();
 
 var app = builder.Build();
